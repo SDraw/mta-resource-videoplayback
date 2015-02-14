@@ -52,7 +52,7 @@ function video.play()
     if(not video.loaded) then return false end
     if(video.ended == true) then return false end
     video.dif = getTickCount()
-    video.current_frame = 0
+    video.current_frame = -1
     video.prtime = 0
     video.as_previous = true
     video.sound = playSound("audio_track.tmp")
@@ -63,7 +63,7 @@ function video.rewind()
     if(not video.loaded) then return false end
     fileSetPos(video.file,video.start_offset)
     video.dif = getTickCount()
-    video.current_frame = 0
+    video.current_frame = -1
     video.prtime = 0
     video.as_previous = true
     if(video.sound) then
