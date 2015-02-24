@@ -135,12 +135,10 @@ function video.draw()
     if(video.as_previous == false) then
         if(video.texture) then
             destroyElement(video.texture)
+            video.texture = false
         end
         if(buffer ~= "" and buffer ~= false) then
             video.texture = dxCreateTexture(buffer,"argb",false,"wrap")
-        end
-        if(video.texture) then
-            dxDrawImage(video.sx/2-160,video.sy/2-90,320,180,video.texture)
         end
     end
     if(video.texture) then
