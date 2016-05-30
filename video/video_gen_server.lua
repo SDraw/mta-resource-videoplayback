@@ -44,7 +44,3 @@ end
 
 fileClose(fl)
 outputServerLog("Video file has been successfully created")
-
-
-
-
