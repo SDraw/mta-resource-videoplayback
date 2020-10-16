@@ -1,10 +1,10 @@
-# mta-resource-videoplayback
+# Videoplayback
 Current resource allows you to play custom videofile.
 
-### Screenshot
+## Screenshot
 ![](http://i.imgur.com/5CQwG2p.png)
 
-### Client-side console commands
+## Client-side console commands
 ```
 vload <file_name>
 vplay
@@ -13,7 +13,7 @@ vrewind
 vunload
 ```
 
-### How to create videofile
+## How to create videofile
 1. You need to separate each frame of video to image file in '<current_resource>/frames/' folder ([Sony Vegas example](http://i.imgur.com/oTapiN2.png)). FPS should be integer. It's better to keep video resolution near or below 320x240 because you can get EXTREMELY large videofile.
 2. Separate audiotrack and put in in resource folder.
 3. Change first three variables in 'video_gen_server.lua' to yours.
